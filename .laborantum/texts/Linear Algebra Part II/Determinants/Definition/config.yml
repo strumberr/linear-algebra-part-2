@@ -1,0 +1,46 @@
+type: choose_any
+score: 1
+header: "Select correct statements"
+text: "Use only the idea of determinant related to volume inside the vectors"
+shuffle: true
+quiz:
+  variants:
+    - text: >
+        $$\forall N \in \mathbb N, \ \forall A \in \mathbb R^{N \times N} 
+        \Rightarrow \det A > 0$$
+      is_correct: false
+    - text: >
+        $$\forall N, M \in \mathbb N, 
+        \ \forall A \in \mathbb R^{N \times M}
+        \Rightarrow  \det A \in \mathbb R$$
+      is_correct: false
+    - text: >
+        $$\forall N \in \mathbb N, \ \forall A \in \mathbb R^{N \times N}
+        \Rightarrow \det A \in \mathbb R$$
+      is_correct: true
+    - text: >
+        $$\forall N \in \mathbb N, \ \forall A \in \mathbb R_{+}^{N \times N}
+        \Rightarrow \det A > 0$$
+      is_correct: false
+    - text: >
+        $$\forall N \in \mathbb N, \ \forall \mathbf d \in \mathbb R_{+}^{N}
+        \Rightarrow \det \left(\mathrm{diag}(\mathbf d)\right) \geq 0$$
+      is_correct: true
+    - text: >
+        $$\forall A \in \mathbb R^{N \times N}: \forall k \ a_{kk} > 0 \Rightarrow \det(A) > 0$$
+      is_correct: false
+    - text: >
+        $$\forall A \in \mathbb R^{N \times N}: \det A = 0 \Rightarrow \exists \boldsymbol \alpha : \sum_{k=1}^N \alpha_k A_{:, k} = \mathbf 0$$
+      is_correct: true
+    - text: >
+        $$\forall A \in \mathbb R^{N \times N}: \exists \boldsymbol \alpha : \sum_{k=1}^N \alpha_k A_{:, k} = \mathbf 0 \Rightarrow \det A = 0$$
+      is_correct: true
+    - text: >
+        $$\forall A \in \mathbb R^{N \times N}: \det A = 0 \Rightarrow \exists k: A_{:, k} = \mathbf 0$$
+      is_correct: false
+    - text: >
+        $$\forall A \in \mathbb R^{N \times N}: \exists k: A_{:, k} = \mathbf 0 \Rightarrow \det A = 0$$
+      is_correct: true
+    - text: >
+        $$\forall A \in \mathbb R^{1\times1} \Rightarrow \det A = |a_{11}|$$
+      is_correct: false

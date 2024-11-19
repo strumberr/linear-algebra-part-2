@@ -1,0 +1,24 @@
+type: choose_any
+score: 1
+header: "Reflection Matrix"
+text: >
+  Select properties of a matrix $A$ that reflects the space
+  reflects the space relative to some hyperplane.
+shuffle: true
+quiz:
+  variants:
+    - text: >
+        $\det A = 0$
+      is_correct: false
+    - text: >
+        $\det A = 1$
+      is_correct: false
+    - text: >
+        $\det A = -1$
+      is_correct: true
+    - text: >
+        $A^T = A^{-1}$
+      is_correct: true
+    - text: >
+        $A = A^{-1}$
+      is_correct: false

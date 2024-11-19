@@ -1,0 +1,7 @@
+type: code
+score: 5
+code:
+  - .laborantum/texts/Linear Algebra Part II/Determinants/Permutations II/task.ipynb
+run:
+  - jupyter-execute ".laborantum/texts/Linear Algebra Part II/Determinants/Permutations II/task.ipynb"
+report: ""

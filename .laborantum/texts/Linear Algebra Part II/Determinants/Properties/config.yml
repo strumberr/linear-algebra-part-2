@@ -1,0 +1,78 @@
+type: match_pairs
+score: 1
+header: "Match Pairs"
+text:
+  "Match cards with sketches and corresponding determinant property"
+shuffle: true
+quiz:
+  variants:
+    - text: >
+        $$\det I = 1$$
+    - text: >
+        $$\det \left(\mathrm{diag}(\mathbf d)\right) = \prod_{k=1}^N d_k$$
+    - text: >
+        $$\det \begin{bmatrix}
+        | & | & & | \\
+        \mathbf a_1 & \mathbf a_1 & \dots & \mathbf a_n \\
+        | & | & & | \\
+        \end{bmatrix} = 0$$
+    - text: >
+        $$\det \begin{bmatrix}
+        | & | & & | \\
+        \mathbf a_1 & \mathbf 0 & \dots & \mathbf a_n \\
+        | & | & & | \\
+        \end{bmatrix} = 0$$
+    - text: >
+        $$\det \begin{bmatrix}
+        | & | & & | \\
+        \mathbf a_1 & c\mathbf a_1 + \mathbf a_2 & \dots & \mathbf a_n \\
+        | & | & & | \\
+        \end{bmatrix} = \det \begin{bmatrix}
+        | & | & & | \\
+        \mathbf a_1 & \mathbf a_2 & \dots & \mathbf a_n \\
+        | & | & & | \\
+        \end{bmatrix}$$
+    - text: >
+        $$\det \begin{bmatrix}
+        | & | & & | \\
+        \mathbf a_1 & C\mathbf a_2 & \dots & \mathbf a_n \\
+        | & | & & | \\
+        \end{bmatrix} = C\det \begin{bmatrix}
+        | & | & & | \\
+        \mathbf a_1 & \mathbf a_2 & \dots & \mathbf a_n \\
+        | & | & & | \\
+        \end{bmatrix}$$
+    - text: >
+        $$\det \begin{bmatrix}
+        | & | & & | \\
+        \mathbf b + \mathbf c & \mathbf a_2 & \dots & \mathbf a_n \\
+        | & | & & | \\
+        \end{bmatrix} = \det \begin{bmatrix}
+        | & | & & | \\
+        \mathbf b & \mathbf a_2 & \dots & \mathbf a_n \\
+        | & | & & | \\
+        \end{bmatrix} + \det \begin{bmatrix}
+        | & | & & | \\
+        \mathbf c & \mathbf a_2 & \dots & \mathbf a_n \\
+        | & | & & | \\
+        \end{bmatrix}
+        $$
+    - text: >
+        $$\det AB = \det A \det B$$
+  left:
+    - text: >
+        1
+    - text: >
+        2
+    - text: >
+        3
+    - text: >
+        4
+    - text: >
+        5
+    - text: >
+        6
+    - text: >
+        7
+    - text: >
+        8

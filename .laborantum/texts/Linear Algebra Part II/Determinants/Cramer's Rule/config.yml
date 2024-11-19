@@ -1,0 +1,7 @@
+type: code
+score: 6
+code:
+  - .laborantum/texts/Linear Algebra Part II/Determinants/Cramer's Rule/task.py
+run:
+  - python3 ".laborantum/texts/Linear Algebra Part II/Determinants/Cramer's Rule/task.py"
+report: ""

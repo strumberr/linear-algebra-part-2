@@ -1,0 +1,7 @@
+type: code
+score: 4
+code:
+  - .laborantum/texts/Linear Algebra Part II/Determinants/Recurrent Formula and Cofactors/task.ipynb
+run:
+  - jupyter-execute ".laborantum/texts/Linear Algebra Part II/Determinants/Recurrent Formula and Cofactors/task.ipynb"
+report: ""

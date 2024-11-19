@@ -1,0 +1,9 @@
+{
+  "courseName": "homework",
+  "includeData": [
+    ".laborantum/utils",
+    ".devcontainer"
+  ],
+  "buildFolder": "homeworks",
+  "calculateHash": true
+}

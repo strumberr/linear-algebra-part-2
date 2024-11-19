@@ -1,0 +1,19 @@
+{
+	"name": "dokertest",
+
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+
+	"customizations": {
+		"vscode": {
+			"settings": {},
+			"extensions": [
+				"laborantum.laborantum",
+				"ms-python.python",
+				"ms-toolsai.jupyter",
+				"ms-toolsai.jupyter-keymap"
+			]
+		}
+	}
+}

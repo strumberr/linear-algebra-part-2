@@ -1,0 +1,7 @@
+type: code
+score: 6
+code:
+  - .laborantum/texts/Linear Algebra Part II/Determinants/Permutations Formula/task.py
+run:
+  - python ".laborantum/texts/Linear Algebra Part II/Determinants/Permutations Formula/task.py"
+report: ""

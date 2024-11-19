@@ -1,0 +1,6 @@
+numpy==2.1.2
+jupyter==1.1.1
+json-tricks==3.17.3
+ipykernel==6.29.5
+jupyter==1.1.1
+scipy==1.14.1
