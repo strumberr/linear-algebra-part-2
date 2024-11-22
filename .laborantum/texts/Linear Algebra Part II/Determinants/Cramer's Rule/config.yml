@@ -4,4 +4,5 @@ code:
   - .laborantum/texts/Linear Algebra Part II/Determinants/Cramer's Rule/task.py
 run:
   - python3 ".laborantum/texts/Linear Algebra Part II/Determinants/Cramer's Rule/task.py"
+  - python .laborantum/utils/checker.py -t "${relativeTaskPath}"
 report: ""

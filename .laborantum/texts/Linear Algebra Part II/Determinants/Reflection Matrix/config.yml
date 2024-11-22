@@ -1,5 +1,5 @@
 type: choose_any
-score: 1
+score: 2
 header: "Reflection Matrix"
 text: >
   Select properties of a matrix $A$ that reflects the space

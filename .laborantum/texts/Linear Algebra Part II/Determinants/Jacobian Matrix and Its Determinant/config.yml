@@ -4,4 +4,5 @@ code:
   - .laborantum/texts/Linear Algebra Part II/Determinants/Jacobian Matrix and Its Determinant/task.ipynb
 run:
   - jupyter-execute ".laborantum/texts/Linear Algebra Part II/Determinants/Jacobian Matrix and Its Determinant/task.ipynb"
+  - python .laborantum/utils/checker.py -t "${relativeTaskPath}"
 report: ""
