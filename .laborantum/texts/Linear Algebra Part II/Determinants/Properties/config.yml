@@ -1,5 +1,5 @@
 type: match_pairs
-score: 1
+score: 3
 header: "Match Pairs"
 text:
   "Match cards with sketches and corresponding determinant property"

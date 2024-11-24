@@ -1,6 +1,6 @@
-import json
 import numpy as np
 import os
+import json_tricks
 
 from pathlib import Path
 
@@ -69,6 +69,6 @@ answer = {
     }
 }
 
-json.dump(
+json_tricks.dump(
     answer, 
     open(home_dir/Path('.answer.json'), "w+"))

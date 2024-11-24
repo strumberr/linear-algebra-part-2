@@ -1,6 +1,8 @@
 type: code
 score: 10
-code: []
+code: 
+  - .laborantum/texts/Linear Algebra Part II/Determinants/Determinant Computation Algorithm/task.ipynb
 run:
-  - ""
+  - jupyter-execute ".laborantum/texts/Linear Algebra Part II/Determinants/Determinant Computation Algorithm/task.ipynb"
+  - python .laborantum/utils/checker.py -t "${relativeTaskPath}"
 report: ""

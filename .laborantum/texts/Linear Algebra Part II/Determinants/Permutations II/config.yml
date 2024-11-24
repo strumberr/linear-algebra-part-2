@@ -4,4 +4,5 @@ code:
   - .laborantum/texts/Linear Algebra Part II/Determinants/Permutations II/task.ipynb
 run:
   - jupyter-execute ".laborantum/texts/Linear Algebra Part II/Determinants/Permutations II/task.ipynb"
+  - python .laborantum/utils/checker.py -t "${relativeTaskPath}"
 report: ""

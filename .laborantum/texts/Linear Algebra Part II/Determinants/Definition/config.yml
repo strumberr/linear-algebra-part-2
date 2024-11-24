@@ -1,5 +1,5 @@
 type: choose_any
-score: 1
+score: 3
 header: "Select correct statements"
 text: "Use only the idea of determinant related to volume inside the vectors"
 shuffle: true
