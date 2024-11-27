@@ -1,35 +1,29 @@
 import json
 import os
 from pathlib import Path
+import itertools
 
 home_dir = Path(__file__).parent.resolve()
 
-matrix_cycle = [1, 2, 3, 4]
+matrix_cycle = [1, 2, 3]
 
 
-result = []
+all_permutations = list(itertools.permutations(matrix_cycle))
 
-n = len(matrix_cycle)
+positive_permutations = []
+negative_permutations = []
 
-for i in range(n):
+for perm in all_permutations:
 
-    matrix_cycle = matrix_cycle[1:] + [matrix_cycle[0]]
-    # result.append(matrix_cycle)
-    
-    result.append(" ".join(map(str, matrix_cycle)))
+    inversions = sum(1 for i in range(len(perm)) for j in range(i + 1, len(perm)) if perm[i] > perm[j])
+    if inversions % 2 == 0:
+        positive_permutations.append(" ".join(map(str, perm)))
+    else:
+        negative_permutations.append(" ".join(map(str, perm)))
 
-print(result)
+print(positive_permutations)
+print(negative_permutations)
 
-reversed_matrix_cycle = matrix_cycle[::-1]
-n = len(reversed_matrix_cycle)
-
-for i in range(n):
-    
-    reversed_matrix_cycle = reversed_matrix_cycle[1:] + [reversed_matrix_cycle[0]]
-    # result.append(reversed_matrix_cycle)
-    result.append(" ".join(map(str, reversed_matrix_cycle)))
-
-print(result)
 
 
 answer = {
@@ -39,6 +33,7 @@ answer = {
                 "2 1"
             ]),
             "-": sorted([
+                ""
             ])
         },
         "3x3": {
@@ -49,18 +44,40 @@ answer = {
                 
             ]),
             "-": sorted([
-                "2 1 3",
-                "1 3 2",
-                "3 2 1"
+                '1 3 2', 
+                '2 1 3', 
+                '3 2 1'
             ])
         },
         "4x4": {
             "+": sorted([
-                "2 3 4 1", "3 4 1 2", "4 1 2 3", "1 2 3 4"
-                
+                '1 2 3 4', 
+                '1 3 4 2', 
+                '1 4 2 3', 
+                '2 1 4 3', 
+                '2 3 1 4', 
+                '2 4 3 1', 
+                '3 1 2 4', 
+                '3 2 4 1', 
+                '3 4 1 2', 
+                '4 1 3 2', 
+                '4 2 1 3', 
+                '4 3 2 1'
             ]),
+            
             "-": sorted([
-                "2 3 4 1", "3 4 1 2", "4 1 2 3", "1 2 3 4", "3 2 1 4", "2 1 4 3", "1 4 3 2", "4 3 2 1"
+                '1 2 4 3', 
+                '1 3 2 4', 
+                '1 4 3 2', 
+                '2 1 3 4', 
+                '2 3 4 1', 
+                '2 4 1 3', 
+                '3 1 4 2', 
+                '3 2 1 4', 
+                '3 4 2 1', 
+                '4 1 2 3', 
+                '4 2 3 1', 
+                '4 3 1 2'
             ])
         }
     }
