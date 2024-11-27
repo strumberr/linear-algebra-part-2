@@ -1,0 +1,52 @@
+type: choose_any
+score: 3
+header: "Eigen Values and Vectors Properties"
+text: >
+  Select correct statements about Eigenvalues and 
+  Eigenvectors
+shuffle: true
+quiz:
+  variants:
+    - text: >
+        If $\lambda_1 \neq \lambda_2$, then corresponding
+        $\alpha \mathbf x_1 + \beta \mathbf x_2 = \mathbf 0 
+        \Leftrightarrow \alpha = 0, \beta = 0$
+      is_correct: true
+    - text: >
+        If $\lambda_1 \neq \lambda_2 \neq \dots \neq \lambda_N$ 
+        for $A \in \mathbb R^{N \times N}$ (matrix has $N$ 
+        different eigen values), then $A = S \Lambda S^{-1}$
+      is_correct: true
+    - text: >
+        $\forall A \in \mathbb R^{M \times N}, M < N, 
+        \exists \lambda_1, \dots \lambda_M: A 
+        \mathbf x_k = \lambda_k \mathbf x_k$
+      is_correct: false
+    - text: >
+        $\forall A \in \mathbb R^{N \times N}, \exists 
+        \lambda_1 \neq \lambda_2 \neq \dots \neq 
+        \lambda_N: A \mathbf x_k = \lambda_k \mathbf x_k$
+      is_correct: false
+    - text: >
+        If $\lambda_1 = \lambda_2 = \dots = \lambda_M$ then
+        there exist exactly $M$ linearly independent eigen
+        vectors for this $\lambda$
+      is_correct: false
+    - text: >
+        $\forall A, S \in \mathbb R^{N \times N}, \det S\neq 0 $ 
+        and $B = S A S^{-1}$, $A$ and $B$ have same eigen values
+      is_correct: true
+    - text: >
+        $\forall A, S \in \mathbb R^{N \times N}, \det S\neq 0 $ 
+        and $B = S A S^{-1}$, $A$ and $B$ have same 
+        eigen vectors
+      is_correct: false
+    - text: >
+        If $A$ and $B$ have same eigenvectors, then they 
+        commute: $AB = BA$
+      is_correct: true
+    - text: >
+        If $A = S \Lambda_1 S^{-1}$ and
+        $B = S \Lambda_2 S^{-1}$, then
+        $AB = BA$
+      is_correct: true

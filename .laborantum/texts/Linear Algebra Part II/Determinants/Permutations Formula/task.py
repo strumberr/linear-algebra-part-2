@@ -7,26 +7,26 @@ home_dir = Path(__file__).parent.resolve()
 answer = {
         "2x2": {
             "+": sorted([
-### YOUR CODE HERE ###
+                ### YOUR CODE HERE ###
             ]),
             "-": sorted([
-### YOUR CODE HERE ###
+                ### YOUR CODE HERE ###
             ])
         },
         "3x3": {
             "+": sorted([
-### YOUR CODE HERE ###
+                ### YOUR CODE HERE ###
             ]),
             "-": sorted([
-### YOUR CODE HERE ###
+                ### YOUR CODE HERE ###
             ])
         },
         "4x4": {
             "+": sorted([
-### YOUR CODE HERE ###
+                ### YOUR CODE HERE ###
             ]),
             "-": sorted([
-### YOUR CODE HERE ###
+                ### YOUR CODE HERE ###
             ])
         }
     }
