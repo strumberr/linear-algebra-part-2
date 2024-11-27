@@ -1,0 +1,39 @@
+type: choose_any
+score: 3
+header: "Eigen Values and Eigen Vectors Definitions"
+text: >
+  Select correct statements about eigen values and 
+  eigen vectors. Consider $\mathbf x$ -- an eigen vector
+  of a matrix $A$ and $\lambda$ -- corresponding eigen
+  value.
+shuffle: true
+quiz:
+  variants:
+    - text: >
+        $A \mathbf x = \lambda \mathbf x$
+      is_correct: true
+    - text: >
+        $\det(A - \lambda I) = 0 \Rightarrow \exists \mathbf x \neq 0 : A \mathbf x = \lambda \mathbf x$ 
+      is_correct: true
+    - text: >
+        $\exists \mathbf x \neq \mathbf 0 : A \mathbf x = \lambda \mathbf x \Rightarrow \det(A - \lambda I) = 0$
+      is_correct: true
+    - text: >
+        If $A \mathbf x_1 = \lambda \mathbf x_1$ and 
+        $A \mathbf x_2 = \lambda \mathbf x_2$, then 
+        $\forall \mathbf x = \alpha \mathbf x_1 + 
+        \beta \mathbf x_2 \Rightarrow A \mathbf 
+        x = \lambda \mathbf x$
+      is_correct: true
+    - text: >
+        If $A \mathbf x_1 = \lambda_1 \mathbf x_1$, $A \mathbf x_2 = \lambda_2 \mathbf x_2$ and $\lambda_1 \neq \lambda_2$, then $\left<\mathbf x_1, \mathbf x_2\right> = 0$
+      is_correct: false
+    - text: >
+        $\forall A \in \mathbb R^{n \times n} \Rightarrow A S = S \Lambda$
+      is_correct: true
+    - text: >
+        $\forall A \in \mathbb R^{n \times n} \Rightarrow A = S \Lambda S^{-1}$
+      is_correct: false
+
+
+

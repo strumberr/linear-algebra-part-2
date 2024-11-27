@@ -1,0 +1,102 @@
+type: choose_any
+score: 3
+header: Jordan Chain
+text: >
+  Select correct expressions having in mind that: 
+  
+  * $M = A - \lambda I$
+  
+  * $\mathbf x_k$ is $k$-th order generalized eigen vector
+  
+  * $\lambda$ us the correspondint eigen value (one of)
+
+  * $J_k$ is Jordan cell, corresponding to $k$-th eigen value $\lambda_k$
+
+  * $J$ is Jordan Matrix
+
+  * $S$ is matrix full of generalized eigen vectors
+shuffle: true
+quiz:
+  variants:
+    - text: >
+        If $\exists \mathbf x: M^k \mathbf x = \mathbf 0 \Rightarrow \det M = 0$
+      is_correct: true
+    - text: >
+        If $\lambda_k$ has multiplicity $\alpha_k$, 
+        then it has exactly $\alpha_k$ eigen vectors
+      is_correct: false
+    - text: >
+        If $\lambda_k$ has multiplicity $\alpha_k$, 
+        then it has exactly $\alpha_k$ 
+        generalized eigen vectors
+      is_correct: true
+    - text: >
+        If $M^2 \mathbf x = \mathbf 0$, then $M \mathbf x = \mathbf x_1$
+      is_correct: true
+    - text: >
+        If $M^k \mathbf x = \mathbf 0$, then $A \mathbf x = \lambda \mathbf x + \mathbf x_{k - 1}$
+      is_correct: true
+    - text: >
+        If matrix $A$ of size $N \times N$
+        has two Jordan Chains, then it is decomposible
+        in form
+        $$A = S J S^{-1}, \ 
+        J = \begin{bmatrix}
+        \lambda & 1 \\
+        & \lambda & 1 \\
+        & & \lambda & 1 \\
+        & & & \ddots & \ddots\\
+        & & & & \lambda & 1 \\
+        & & & & & \lambda\\
+        \end{bmatrix}$$
+      is_correct: false
+    - text: >
+        Matrix $A \in \mathbb R^{N \times N}$ is always
+        representable in form
+        $$A = S J S^{-1}$$
+        where J is block-diagonal matrix $J = \mathrm{diag}(J_1, J_2, \dots, J_M)$, where
+        $J_k$ is Jordan cell:
+        $$J_k = \begin{bmatrix}
+        \lambda_k & 1 \\
+        & \lambda_k & 1 \\
+        & & \lambda_k & 1 \\
+        & & & \ddots & \ddots\\
+        & & & & \lambda_k & 1 \\
+        & & & & & \lambda_k\\
+        \end{bmatrix}$$
+      is_correct: true
+    - text: >
+        If matrix does not have Jordan chains, it
+        is diagonisable:
+        $$A = S \Lambda S^{-1}$$
+      is_correct: true
+    - text: >
+        If matrix $A$ does not have Jordan chains, then
+        $$\exp(A) = S \exp(\Lambda) S^{-1},$$
+        where 
+        $$\exp \Lambda = \ \mathrm{diag}(\exp(\lambda_1), \exp(\lambda_2), \dots, \exp(\lambda_n))$$
+      is_correct: true
+    - text: > 
+        Exponent of Jordan Cell is equal to
+        $$\exp(J_k) = \begin{bmatrix}
+        \exp(\lambda) & \exp(1) \\
+        & \exp(\lambda) & \exp(1) \\
+        & & \exp(\lambda) & \exp(1) \\
+        & & & \ddots & \ddots\\
+        & & & & \exp(\lambda) & \exp(1) \\
+        & & & & & \exp(\lambda)\\
+        \end{bmatrix}$$
+      is_correct: false
+    - text: >
+        Exponent of Jordan Cell is equal to
+
+        $$e^{J_k} = e^{\lambda}
+        \begin{bmatrix}
+        1 & 1 & \frac{1}{2!} & \cdots & \frac{1}{(k-1)!} \\
+        0 & 1 & 1 & \cdots & \frac{1}{(k-2)!} \\
+        0 & 0 & 1 & \cdots & \frac{1}{(k-3)!} \\
+        \vdots & \vdots & \vdots & \ddots & \vdots \\
+        0 & 0 & 0 & \cdots & 1
+        \end{bmatrix}$$
+
+      is_correct: true

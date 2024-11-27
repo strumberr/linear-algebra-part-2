@@ -9,62 +9,62 @@ home_dir = Path(__file__).parent.resolve()
 answer = {
     "task1": {
         "det_A_terms": sorted([
-### YOUR CODE HERE ###
+            ### YOUR CODE HERE ###
         ]),
         "det_A_1_terms": sorted([
-### YOUR CODE HERE ###
+            ### YOUR CODE HERE ###
         ]),
         "det_A_2_terms": sorted([
-### YOUR CODE HERE ###
+            ### YOUR CODE HERE ###
         ]),
         "x": np.array(
-### YOUR CODE HERE ###
+            ### YOUR CODE HERE ###
         ),
         "cofactors": np.array(
-### YOUR CODE HERE ###
+            ### YOUR CODE HERE ###
         ),
         "inverse": np.array(
-### YOUR CODE HERE ###
+            ### YOUR CODE HERE ###
         )
     },
     "task2": {
         "det_A_terms": sorted([
-### YOUR CODE HERE ###
+            ### YOUR CODE HERE ###
         ]),
         "det_A_1_terms": sorted([
-### YOUR CODE HERE ###
+            ### YOUR CODE HERE ###
         ]),
         "det_A_2_terms": sorted([
-### YOUR CODE HERE ###
+            ### YOUR CODE HERE ###
         ]),
         "x": np.array(
-### YOUR CODE HERE ###
+            ### YOUR CODE HERE ###
         ),
         "cofactors": np.array(
-### YOUR CODE HERE ###
+            ### YOUR CODE HERE ###
         ),
         "inverse": np.array(
-### YOUR CODE HERE ###
+            ### YOUR CODE HERE ###
         )
     },
     "task3": {
         "det_A_terms": sorted([
-### YOUR CODE HERE ###
+            ### YOUR CODE HERE ###
         ]),
         "det_A_1_terms": sorted([
-### YOUR CODE HERE ###
+            ### YOUR CODE HERE ###
         ]),
         "det_A_2_terms": sorted([
-### YOUR CODE HERE ###
+            ### YOUR CODE HERE ###
         ]),
         "x": np.array(
-### YOUR CODE HERE ###
+            ### YOUR CODE HERE ###
         ),
         "cofactors": np.array(
-### YOUR CODE HERE ###
+            ### YOUR CODE HERE ###
         ),
         "inverse": np.array(
-### YOUR CODE HERE ###
+            ### YOUR CODE HERE ###
         )
     }
 }

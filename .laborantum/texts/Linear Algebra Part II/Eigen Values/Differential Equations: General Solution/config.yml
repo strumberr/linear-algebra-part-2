@@ -1,0 +1,58 @@
+type: order_cards
+score: 5
+header: "Differential equations: General Solution"
+text: >
+    Order the cards to get the proof of the formula for Linear 
+    Differential Equations general solution
+shuffle: true
+quiz:
+  variants:
+    - text: >
+        Consider DE: $\dot{\mathbf x} = A \mathbf x$
+    - text: >
+        Suppose solution is 
+        $$\mathbf x(t) = \mathbf v \exp(\lambda t)$$
+        where $\mathbf v$ is an eigen vector corresponding to
+        eigen value $\lambda$
+    - text: >
+        On one hand, taking derivative of that
+        function over time $t$, one gets 
+        $$\dot{\mathbf x} = \mathbf v 
+        \frac{\partial}{\partial t}\exp(\lambda t) = 
+        \mathbf v \lambda \exp(\lambda t)$$
+    - text: >
+        On the other hand, applying matrix to 
+        $\mathbf x(t)$ and remembering that $\mathbf v$
+        is eigenvector of $A$, we get:
+        $$A \mathbf x(t) = \exp(\lambda t) 
+        A \mathbf v = \exp(\lambda t) 
+        \lambda \mathbf v$$
+    - text: >
+        We see that indeed, $\dot{\mathbf x} = 
+        A \mathbf x$ for such $\mathbf x(t)$
+    - text: >
+        Thus, for every pair $\lambda_k, \mathbf v_k$
+        we have a solution:
+        $$\mathbf x(t) = \mathbf v_k \exp(\lambda_k t)$$
+    - text: >
+        Now, if $\mathbf x_1(t)$ and $\mathbf x_2(t)$
+        are solutions, then $\forall \alpha, \beta \ \ 
+        \alpha \mathbf x_1 + \beta \mathbf x_2$ is 
+        also a solution:
+        $$\frac{\partial}{\partial t}(\alpha \mathbf x_1 + 
+        \beta \mathbf x_2) = 
+        \alpha \dot{\mathbf x}_1 + \beta \dot{\mathbf x}_2 = 
+        \alpha A \mathbf x_1 + \beta A \mathbf x_2 = A ( \alpha \mathbf x_1 + \beta \mathbf x_2)$$
+    - text: >
+        Hence,
+        $$\forall C_k \in \mathbb C, \ \mathbf x(t) = \sum_{k=1}^M C_k \mathbf v_k \exp(\lambda_k t)$$
+        are solutions of the original DE if all eigen vectors
+        are present
+    - text: >
+        If one of the eigen values generates Jordan
+        chain, then
+        $$A \mathbf v_k = \mathbf v_{k - 1} + \lambda \mathbf v_{k}$$
+    - text: >
+        Then the following general solution works:
+        $$\mathbf x(t) = \exp(\lambda t)\left(\mathbf v_0 + t \mathbf v_1 + \frac{t^2}{2} \mathbf v_2 + \dots + \frac{t^k}{k!} \mathbf v_k\right)$$
+

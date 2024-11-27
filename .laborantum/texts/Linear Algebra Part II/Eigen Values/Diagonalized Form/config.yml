@@ -1,0 +1,67 @@
+type: order_cards
+score: 5
+header: "Matrix Diagonalized Form"
+text: "Order cards to get derivation of Diagonalized form"
+shuffle: true
+quiz:
+  variants:
+    - text: >
+        Take definition of eigen vectors:
+        $$A \mathbf x = \lambda \mathbf x$$
+
+    - text: >
+        Find all eigenvalues $\lambda_1, \dots, \lambda_M$
+        and eigenvectors $\mathbf x_1, \dots, \mathbf x_M$
+
+    - text: >
+        Form matrices $S$ and $\Lambda$:
+        $$S = \begin{bmatrix}
+        | & & | \\
+        \mathbf x_1 & \dots & \mathbf x_M \\
+        | & & | \\
+        \end{bmatrix}
+        \quad
+        \Lambda = \begin{bmatrix}
+        \lambda_1 \\
+        & \ddots \\
+        & & \lambda_M
+        \end{bmatrix}
+        $$
+
+    - text: >
+        On one hand
+        $$A S = \begin{bmatrix}
+        | & & | \\
+        A \mathbf x_1 & \dots & A\mathbf x_M \\
+        | & & | \\
+        \end{bmatrix} = 
+        \begin{bmatrix}
+        | & & | \\
+        \lambda_1 \mathbf x_1 & \dots & \lambda_M x_M \\
+        | & & | \\
+        \end{bmatrix}$$
+
+    - text: >
+        On the other hand
+        $$S \Lambda = 
+        \begin{bmatrix}
+        | & & | \\
+        \mathbf x_1 & \dots & \mathbf x_M \\
+        | & & | \\
+        \end{bmatrix}
+        \begin{bmatrix}
+        \lambda_1 \\
+        & \ddots \\
+        & & \lambda_M
+        \end{bmatrix} = \begin{bmatrix}
+        | & & | \\
+        \lambda_1 \mathbf x_1 & \dots & \lambda_M x_M \\
+        | & & | \\
+        \end{bmatrix}$$
+
+    - text: >
+        Hence, $AS = S \Lambda$
+
+    - text: >
+        If $\exists S^{-1}$ ($M = \dim A$), then
+        $$A = S \Lambda S^{-1}$$

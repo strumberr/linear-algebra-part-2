@@ -1,0 +1,33 @@
+type: order_cards
+score: 5
+header: "QR Iteration"
+text: "Order cards to form QR iteration algorithm"
+shuffle: true
+quiz:
+  variants:
+    - text: >
+        Take matrix $A \rightarrow A_0$
+    - text: >
+        Repeat until convergence for $k$-th step:
+    - text: >
+        Perform QR decomposition of $A_k$:
+        $$A_k = Q_k R_k$$
+    - text: >
+        Form matrix $A_{k + 1}$ by swapping matrices 
+        $Q_k$ and $R_k$:
+        $$A_{k + 1} = R_k Q_k$$
+    - text: >
+        $A_k$ is similar to $A_{k+1}$ as $R^T R = I$ and
+        $$A_{k+1} = R_k Q_k = R_k (Q_k R_k) R_k^T = R_k A_k R_k^T$$
+        And thus all chain $A_0, \dots, A_{k+1}$ have 
+        same eigen values
+    - text: >
+        Check lower triangle of $A_{k+1}$
+        (should be close to zero)
+    - text: >
+        Sequence converges to upper-triangle
+        matrix $A_{\infty}$
+    - text: >
+        For $A_{\infty}$: 
+        $$P(\lambda) = \det (A - \lambda I) = \prod_{k=1}^N (a_{kk} - \lambda)$$
+        And hence, $\lambda_k = a_{kk}$

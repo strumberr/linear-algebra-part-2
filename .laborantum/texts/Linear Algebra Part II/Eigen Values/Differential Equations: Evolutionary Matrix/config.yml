@@ -1,0 +1,42 @@
+type: order_cards
+score: 5
+header: Evolutionary Matrix
+text: >
+  Order the cards to get the Evolutionary Matrix Derivation
+shuffle: true
+quiz:
+  variants:
+    - text: >
+        Consider DE $\dot{\mathbf x} = A \mathbf x$
+    - text: >
+        Consider function $\mathbf x(t) = \exp(At) \mathbf x_0$
+    - text: >
+        Taking derivative of this function we get:
+        $$\frac{\partial \exp(At)}{\partial t}\mathbf x_0$$
+    - text: >
+        Carefully rewriting the time derivative, we get:
+        $$\frac{\partial \exp(At)}{\partial t} = $$
+    - text: >
+        $$= \frac{\partial}{\partial t} \sum_{k=0}^\infty \frac{A^k t^k}{k!} =$$
+    - text: >
+        $$ = \sum_{k=0}^\infty \frac{A^k}{k!} \frac{\partial t^k}{\partial t} = $$
+    - text: >
+        $$ = \sum_{k=1}^\infty \frac{A^k}{k!} k t^{k - 1} = $$
+    - text: >
+        $$ = \sum_{k=1}^\infty \frac{A^k}{(k - 1)!} t^{k - 1} = $$
+    - text: >
+        $$= A \sum_{k=1}^\infty \frac{A^{k - 1}}{(k - 1)!} t^{k - 1} = $$
+    - text: >
+        $$= A \sum_{k=0}^\infty \frac{A^{k}}{k!} t^{k} =$$
+    - text: >
+        $$= A \exp(At)$$
+    - text: >
+        And hence, 
+        $$\frac{\partial \exp(At)}{\partial t}\mathbf x_0 = 
+        A \exp(At) \mathbf x_0$$
+    - text: >
+        On the other hand, multiplying $\mathbf x(t)$ with $A$
+        gives the same result:
+        $$ A \exp(At)\mathbf x_0$$
+    - text: > 
+        Hence, $\mathbf x_0$ is a solution of original DE
