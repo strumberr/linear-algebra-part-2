@@ -1,4 +1,6 @@
 order:
   - Determinants
   - Eigen Values
-  - Symmetric Matrices and Diagonalized Forms
+  - Bilinear Forms and Symmetric Matrices
+  - Singular Value Decomposition
+  - Discrete Fourier Transform

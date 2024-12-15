@@ -78,7 +78,7 @@ def run_checks(
 
     if isinstance(expected, numbers.Number):
         try:
-            misfit = math.fabs(expected - recieved)
+            misfit = abs(expected - recieved)
             check = (misfit < eps)
             explanation = 'OK'
             if not check:
