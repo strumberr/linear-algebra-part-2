@@ -1,0 +1,96 @@
+type: order_cards
+score: 5
+visible: false
+header: |
+  Order the cards
+text: >
+  Order the cards to get the logic of proof of the  Diagonalized Symmetric
+  Matrix form.
+
+  The notation is:
+
+  * $A$ -- arbitrary matrix
+
+  * $S$ -- matrix with generalized eigen values
+
+  * $J$ -- Jordan matrix
+
+  * $M = A - \lambda I$
+
+  * $\mathbf x_k$ -- generalized eigen vector of $k$-th order
+shuffle: true
+quiz:
+  variants:
+    - text: |
+        Take the original matrix $A$
+    - text: |
+        Every matrix has Jordan Normal Form: $$A = S J S^{-1}$$
+    - text: >
+        If matrix $A$ is symmetric, then introduce  $$M = A - \lambda I.$$ For
+        this matrix, $M^T = M$
+    - text: >
+        On one hand, $$\left<M \mathbf x_2, M \mathbf x_2\right>
+        =  \left<\mathbf x_{1}, \mathbf x_{1}\right>$$
+    - text: >
+        On the other hand, $$\left<M \mathbf x_2, M \mathbf x_2\right>
+        =  \left<\mathbf x_2, M^T M \mathbf x_2\right> =  \left<\mathbf x_2,
+        \mathbf 0 \right> = 0$$
+    - text: |
+        Thus, $\mathbf x_2$ is always $\mathbf x_1$
+    - text: >
+        Hence, there are no Jordan Chains in Jordan form of matrix $A$, and thus
+        matrix $A$ is diagonalizable:
+
+        $$A = S \Lambda S^{-1}$$
+    - text: |
+        Besides, the matrix $S$ can be orthonormalized due to:
+    - text: |
+        Firstly, for symmetric matrix $A = A^T$, the eigen vectors 
+        $\mathbf x_1$ and $\mathbf x_2$ that correspond
+        to the different $\lambda_1$ and $\lambda_2$
+        are orthogonal:
+    - text: |
+        On one hand,
+        $$\left<\mathbf x_1, A \mathbf x_2\right> = 
+        \lambda_2 \left<\mathbf x_1, \mathbf x_2 \right>$$
+    - text: |
+        On the other hand,
+        $$\left<\mathbf x_1, A \mathbf x_2\right> = 
+        \mathbf x_1^T A \mathbf x_2 = 
+        \left<A^T \mathbf x_1, \mathbf x_2\right> = 
+        \left<A \mathbf x_1, \mathbf x_2\right> = 
+        \lambda_1 \left<\mathbf x_1, \mathbf x_2 \right>$$
+    - text: |
+        Hence, either $\lambda_1 = \lambda_2$ (but that
+        contradicts with initial suggestions)
+        
+        or $\left<\mathbf x_1, \mathbf x_2\right>$
+    - text: |
+        On the other hand, if two vectors $\mathbf x_1$
+        and $\mathbf x_2$ correspond to the same
+        $\lambda$, then 
+        $$\forall \mathbf x \in \textrm{Span}(\mathbf x_2, \mathbf x_2)$$
+        is also an eigen vector with the same $\lambda$:
+    - text: |
+        $$A (\alpha \mathbf x_1 + \beta \mathbf x_2) = 
+        \alpha A \mathbf x_1 + \beta A \mathbf x_2 = 
+        \alpha \lambda \mathbf x_1 + \beta \lambda
+        \mathbf x_2 = 
+        \lambda (\alpha \mathbf x_1 + \beta \mathbf x_2)$$
+    - text: |
+        Span is a linear space, thus we can select an
+        orthogonal basis in it
+    - text: |
+        Hence, all the vectors in matrix $S$ either
+        already are orthogonal or can be selected to
+        be orthogonal
+    - text: |
+        After selection of orthogonal set of vectors for
+        $S$, we can normalize the vectors thus turning
+        matrix $S$ to orthonormal matrix $Q$
+    - text: |
+        Hence, the symmetric matrix is diagonalisable
+        $$A = Q \Lambda Q^T,$$
+        where $Q$ is orthnormal matrix:
+        $Q^T Q = Q Q^T = I$
+

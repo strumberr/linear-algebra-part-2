@@ -1,0 +1,44 @@
+type: order_cards
+score: 5
+header: >
+  Singular Value Decomposition
+text: >
+  Order the cards to get derivation of Singular Value
+  Decomposition
+shuffle: true
+quiz:
+  variants:
+    - text: >
+        Consider $A \in \mathbb R^{N \times M}$
+    - text: >
+        Firstly, consider matrix $A^T A$
+    - text: >
+        Matrix $A^T A$ is symmetric:
+        $$(A^T A)^T = A^T (A^T)^T = A^T A$$
+    - text: >
+        Additionally, this symmetric matrix defines
+        a positive semidefinite bilinear form:
+        $$\forall \mathbf x: \ \ \mathbf x^T A^T A \mathbf x = (A \mathbf x)^T (A \mathbf x) = \|A \mathbf x\|^2 \geq 0$$
+    - text: >
+        Thus, this matrix has a diagonalized form:
+        $$A^T A = U \Lambda U^T, \quad U^T U = I \quad \Lambda_1 \geq 0$$
+    - text: >
+        Due to the same reasons, $A A^T$ also has diagonalized
+        form:
+        $$V \Lambda_2 V^T, \quad V^T V = I, \quad \Lambda_2 \geq 0$$
+    - text: >
+        All nonzero elements of $\Lambda_1$ and $\Lambda_2$
+        are equal because:
+        $$A^T A \mathbf x = \lambda \mathbf x \Rightarrow A A^T (A \mathbf x) = \lambda A \mathbf x$$
+        Hence, nonzero eigenvalues of $\Lambda_1$ and $\Lambda_2$
+        coinside
+
+    - text: >
+        Construct a matrix $B = U S V^T$, where matrix $S$ is:
+        $S^T S = \Lambda_1$ and $S S^T = \Lambda_2$.
+
+    - text: >
+        Then $B^T B = A^T A$ and $B B^T = A A^T$
+
+    - text: >
+        Hence, $A = U S V^T$
